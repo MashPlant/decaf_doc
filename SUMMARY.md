@@ -22,6 +22,7 @@
   - [中间代码中的类型信息](book/pa3/中间代码中的类型信息.md)
   - [运行时存储布局](book/pa3/运行时存储布局.md)
   - [面向对象机制](book/pa3/面向对象机制.md)
+  - [tacvm简述](book/pa3/tacvm简述.md)
 * pa4
   - [实验内容](book/pa4/实验内容.md)
   - [基本块](book/pa4/基本块.md)
