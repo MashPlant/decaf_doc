@@ -13,3 +13,16 @@ lalr1有两套代码生成的方式，比较传统的一种是读取配置文件
 此外，还可以为impl块添加一些可选的属性，后面会详细描述。
 
 对于impl块中的每个函数，都使用rust的正常函数的语法来编写语义动作，同时用函数级别的属性来描述产生式。
+
+生成出来的rust代码中不会保留这个impl块，也就是说这里面编写的东西都不会直接被编译。输出的结果包含两个enum，即`TokenKind`和`StackItem`，两个struct，即`Token`和`Lexer`，并为你希望成为parser的struct提供一个`parse`函数。根据我的使用经验，现在的ide或者编辑器不太可能把这些符号识别出来并且给予正常的语法提示，如果希望了解具体的api的话，可以使用之前提到的`#[expand]`，也可以使用`rust doc`，它会在展开过程宏后再分析api。
+
+生成出来的`Lexer`是可以独立于`Parser`使用的，下面的代码可以依次输出从一个字符串中解析出的全部token：
+
+```rust
+let mut lexer = Lexer::new("your string here".as_bytes());
+loop {
+  let token = lexer.next();
+  println!("{:?}", token);
+  if token.ty == TokenKind::_Eof { break; }
+}
+```
