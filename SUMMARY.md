@@ -5,6 +5,7 @@
     - [impl块的可选属性](book/pa1a/impl块的可选属性.md)
     - [产生式和语法动作](book/pa1a/产生式和语法动作.md)
     - [解决冲突](book/pa1a/解决冲突.md)
+    - [一个完整的例子](book/pa1a/一个完整的例子.md)
   - [抽象语法树](book/pa1a/抽象语法树.md)
   - [框架中部分实现的解释](book/pa1a/框架中部分实现的解释.md)
 * pa1b
