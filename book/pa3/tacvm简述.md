@@ -21,6 +21,7 @@ tacvm从文本中parse出tac语句，然后经过一定转换后执行。目前�
 tacvm会检测tac代码的运行错误，这里直接列出tacvm中表示所有的错误种类的代码：
 
 ```rust
+#[derive(Debug)]
 pub enum Error {
   // program calls _Halt explicitly
   Halt,
@@ -36,6 +37,8 @@ pub enum Error {
   StrOutOfRange,
   // instruction fetch out of range
   IFOutOfRange,
+  // call a register which is not a valid function id
+  CallOutOfRange,
   // call stack exceeds a given level(specified in RunConfig)
   StackOverflow,
   // instructions exceeds a given number(specified in RunConfig)
