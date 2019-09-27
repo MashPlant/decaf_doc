@@ -8,10 +8,12 @@
     - [一个完整的例子](book/pa1a/一个完整的例子.md)
   - [抽象语法树](book/pa1a/抽象语法树.md)
   - [框架中部分实现的解释](book/pa1a/框架中部分实现的解释.md)
+  - [文件结构](book/pa1a/文件结构.md)
 * pa1b
   - [实验内容](book/pa1b/实验内容.md)
   - [lalr1使用指导](book/pa1b/lalr1使用指导.md)
   - [错误恢复](book/pa1b/错误恢复.md)
+  - [文件结构](book/pa1b/文件结构.md)
 * pa2
   - [实验内容](book/pa2/实验内容.md)
   - [语义分析](book/pa2/语义分析.md)
