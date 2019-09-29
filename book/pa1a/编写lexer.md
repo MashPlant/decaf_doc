@@ -2,7 +2,7 @@
 
 ## 编写lexer
 
-`#[lex(TomlOfLexer)]`的toml中应该包含`priority`和`lexical`两个字段，前者用于指定终结符的优先级和结合性，**排在后面的优先级高**；后者用于指定终结符的正则表达式，当一个字符串片段可以被解释成两种终结符时(例如`int`可以被解释成`Int`或者`Identifier`)，选择的原则是尽量选长的匹配，如果两个匹配一样长，**排在前面的优先级高**。
+`#[lex(TomlOfLexer)]`的[toml](https://github.com/LongTengDao/TOML/blob/%E9%BE%99%E8%85%BE%E9%81%93-%E8%AF%91/versions/cn/toml-v0.5.0.md)中应该包含`priority`和`lexical`两个字段，前者用于指定终结符的优先级和结合性，**排在后面的优先级高**；后者用于指定终结符的正则表达式，当一个字符串片段可以被解释成两种终结符时(例如`int`可以被解释成`Int`或者`Identifier`)，选择的原则是尽量选长的匹配，如果两个匹配一样长，**排在前面的优先级高**。
 
 一个比较简单的`#[lex(TomlOfLexer)]`的例子如下：
 
