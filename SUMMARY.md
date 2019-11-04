@@ -18,7 +18,9 @@
   - [实验内容](book/pa2/实验内容.md)
   - [语义分析](book/pa2/语义分析.md)
   - [符号表](book/pa2/符号表.md)
+  - [语句的返回类型](book/pa2/语句的返回类型.md)
   - [visitor模式](book/pa2/visitor模式.md)
+  - [框架中部分实现的解释](book/pa2/框架中部分实现的解释.md)
 * pa3
   - [实验内容](book/pa3/实验内容.md)
   - [中间代码](book/pa3/中间代码.md)
