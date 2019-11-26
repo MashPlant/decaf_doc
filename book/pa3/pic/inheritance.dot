@@ -1,0 +1,16 @@
+digraph {
+  dpi=150
+  Object -> A[style = dashed]
+  Object -> B[style = dashed]
+  A -> C1
+  A -> C2
+  B -> D
+  C1 -> E
+  Object[label="Object\nid=0, fid=6"]
+  A[label="A\nid=1, fid=4"]
+  B[label="B\nid=5, fid=6"]
+  C1[label="C1\nid=2, fid=3"]
+  C2[label="C2\nid=4, fid=4"]
+  D[label="D\nid=6, fid=6"]
+  E[label="E\nid=3, fid=3"]
+}
